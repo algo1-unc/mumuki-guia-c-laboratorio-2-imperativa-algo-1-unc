@@ -2,7 +2,7 @@
 
 int x, y, expected;
 
-describe ("Distancia") {
+describe ("Test: ") {
     
     x = 15;
     y = 2;
