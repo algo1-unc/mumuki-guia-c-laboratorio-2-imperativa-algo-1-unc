@@ -6,7 +6,7 @@
 // Funciones para generar mensaje de test
 char* genMsj(const int x, const int result ) {
     char* message;
-    asprintf(&message, "sumarHasta(%d) = %d", x, y, result);
+    asprintf(&message, "sumarHasta(%d) = %d", x, result);
     return message;
 }
 
