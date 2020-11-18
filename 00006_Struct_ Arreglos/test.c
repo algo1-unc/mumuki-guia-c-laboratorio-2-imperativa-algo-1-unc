@@ -5,7 +5,7 @@ struct info_t st_student;
 struct INFO_T st_expected;
 
 
-describe ("[0]: ") {
+describe("[0]: ") {
     
     int list0[] = {0};
     len = sizeof(list0) / sizeof(int);
@@ -13,7 +13,7 @@ describe ("[0]: ") {
     st_student = analiza_array(list0, len);
     st_expected = ANALIZA_ARRAY(list0, len);
 
-    describe (genMsj(st_expected.sumatoria, st_expected.maximo, st_expected.minimo, st_expected.alguno_positivo, st_expected.todos_positivos) {
+    describe(genMsj(st_expected.sumatoria, st_expected.maximo, st_expected.minimo, st_expected.alguno_positivo, st_expected.todos_positivos)) {
         it (" [Check 'Sum']") {
             should_int(st_student.sumatoria) be equal to(st_expected.sumatoria);
         } end
@@ -37,7 +37,7 @@ describe ("[0]: ") {
 
 } end
 
-describe ("[-54]: ") {
+describe("[-54]: ") {
     
     int list1[] = {-54};
     len = sizeof(list1) / sizeof(int);
@@ -45,7 +45,7 @@ describe ("[-54]: ") {
     st_student = analiza_array(list1, len);
     st_expected = ANALIZA_ARRAY(list1, len);
 
-    describe (genMsj(st_expected.sumatoria, st_expected.maximo, st_expected.minimo, st_expected.alguno_positivo, st_expected.todos_positivos) {
+    describe(genMsj(st_expected.sumatoria, st_expected.maximo, st_expected.minimo, st_expected.alguno_positivo, st_expected.todos_positivos)) {
         it (" [Check 'Sum']") {
             should_int(st_student.sumatoria) be equal to(st_expected.sumatoria);
         } end
@@ -69,7 +69,7 @@ describe ("[-54]: ") {
 
 } end
 
-describe ("[-1,-2,0,1,2]: ") {
+describe("[-1,-2,0,1,2]: ") {
     
     int list2[] = {-1,-2,0,1,2};
     len = sizeof(list2) / sizeof(int);
@@ -77,7 +77,7 @@ describe ("[-1,-2,0,1,2]: ") {
     st_student = analiza_array(list2, len);
     st_expected = ANALIZA_ARRAY(list2, len);
 
-    describe (genMsj(st_expected.sumatoria, st_expected.maximo, st_expected.minimo, st_expected.alguno_positivo, st_expected.todos_positivos) {
+    describe(genMsj(st_expected.sumatoria, st_expected.maximo, st_expected.minimo, st_expected.alguno_positivo, st_expected.todos_positivos)) {
         it (" [Check 'Sum']") {
             should_int(st_student.sumatoria) be equal to(st_expected.sumatoria);
         } end
@@ -101,7 +101,7 @@ describe ("[-1,-2,0,1,2]: ") {
 
 } end
 
-describe ("[1,2,3,4,5]: ") {
+describe("[1,2,3,4,5]: ") {
     
     int list3[] = {1,2,3,4,5};
     len = sizeof(list3) / sizeof(int);
@@ -109,7 +109,7 @@ describe ("[1,2,3,4,5]: ") {
     st_student = analiza_array(list3, len);
     st_expected = ANALIZA_ARRAY(list3, len);
 
-    describe (genMsj(st_expected.sumatoria, st_expected.maximo, st_expected.minimo, st_expected.alguno_positivo, st_expected.todos_positivos) {
+    describe(genMsj(st_expected.sumatoria, st_expected.maximo, st_expected.minimo, st_expected.alguno_positivo, st_expected.todos_positivos)) {
         it (" [Check 'Sum']") {
             should_int(st_student.sumatoria) be equal to(st_expected.sumatoria);
         } end

@@ -13,7 +13,7 @@ struct div_t division(int dividendo, int divisor) {
    int cociente;
    int resto;
    bool excepcion;
-}
+};
 ```
 
 , y guardará tanto el **cociente** como el **resto** de la división.
