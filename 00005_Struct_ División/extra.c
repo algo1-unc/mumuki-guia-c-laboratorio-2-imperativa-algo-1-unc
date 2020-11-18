@@ -9,7 +9,7 @@ char* genMsj(   const int dividendo, const int divisor,
                 const int cociente, const int resto, const bool excepcion) {
     char* message;
     asprintf(&message, "division(%d, %d). Cociente:%d, Resto:%d, Excepcion:%s", 
-        dividendo, divisor, cociente, ressto, excepcion ? "true" : "false");
+        dividendo, divisor, cociente, resto, excepcion ? "true" : "false");
     return message;
 }
 
