@@ -5,11 +5,12 @@
 
 
 // Funciones para generar mensaje de test
-char* genMsj(   const int sum, const int max, const int min,
+char* genMsj(   const char* list,
+                const int sum, const int max, const int min,
                 const bool any_pos,  const bool all_pos) {
     char* message;
-    asprintf(&message, "Sum:%d, Max:%d, Min:%d, Alguno(+):%s, Todos(+):%s",
-        sum, max, min, any_pos ? "true": "false", all_pos ? "true": "false");
+    asprintf(&message,"(%s) | Sum:%d, Max:%d, Min:%d, Alguno(+):%s, Todos(+):%s",
+        list, sum, max, min, any_pos ? "true": "false", all_pos ? "true": "false");
     return message;
 }
 
