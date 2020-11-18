@@ -20,7 +20,7 @@ struct INFO_T {
     int maximo;
     int minimo;
     bool alguno_positivo;
-    bool todos_positivo;
+    bool todos_positivos;
 };
 
 
@@ -29,7 +29,7 @@ struct INFO_T ANALIZA_ARRAY(int a[], int tam) {
     int c_val;
 
     info_t.alguno_positivo = false;
-    info_t.todos_positivo = true;
+    info_t.todos_positivos = true;
     info_t.sumatoria = 0;
     info_t.maximo = a[0];
     info_t.minimo = a[0];
@@ -37,7 +37,7 @@ struct INFO_T ANALIZA_ARRAY(int a[], int tam) {
     for (int i = 0; i < tam; i++) {
         c_val = a[i];
         info_t.alguno_positivo = info_t.alguno_positivo || (c_val > 0);
-        info_t.todos_positivo = info_t.todos_positivo && (c_val > 0);
+        info_t.todos_positivos = info_t.todos_positivos && (c_val > 0);
         info_t.sumatoria = info_t.sumatoria + c_val;
 
         // Maximo

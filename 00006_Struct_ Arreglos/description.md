@@ -14,7 +14,7 @@ struct info_t {
     int maximo;
     int minimo;
     bool alguno_positivo;
-    bool todos_positivo;
+    bool todos_positivos;
 };
 ```
 
