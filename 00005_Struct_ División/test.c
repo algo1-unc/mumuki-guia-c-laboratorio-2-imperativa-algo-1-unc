@@ -25,7 +25,7 @@ describe (":") {
         it ("   [Check 'Excepcion']") {
             should_bool(st_student.excepcion) be equal to(st_expected.excepcion);
         } end
-    }
+    } end
 
     // ---
     dividendo = 12;
@@ -46,7 +46,7 @@ describe (":") {
         it ("   [Check 'Excepcion']") {
             should_bool(st_student.excepcion) be equal to(st_expected.excepcion);
         } end
-    }
+    } end
 
     // ---
     dividendo = 0;
@@ -67,7 +67,7 @@ describe (":") {
         it ("   [Check 'Excepcion']") {
             should_bool(st_student.excepcion) be equal to(st_expected.excepcion);
         } end
-    }
+    } end
 
     // ---
     dividendo = 12;
@@ -88,7 +88,7 @@ describe (":") {
         it ("   [Check 'Excepcion']") {
             should_bool(st_student.excepcion) be equal to(st_expected.excepcion);
         } end
-    }
+    } end
 
     // ---
     dividendo = 0;
@@ -109,6 +109,6 @@ describe (":") {
         it ("   [Check 'Excepcion']") {
             should_bool(st_student.excepcion) be equal to(st_expected.excepcion);
         } end
-    }
+    } end
     
 } end
