@@ -2,8 +2,8 @@
 #include <string.h>
 
 // Macros
-#define ABS(x) ((x < 0) ? (-x) : x)
-#define DISTANCIA(x,y) (ABS(x-y))
+#define ABS(x) (((x) < 0) ? (-x) : (x))
+#define DISTANCIA(x,y) (ABS((x-y)))
 
 
 // Funcion para generar mensaje de test

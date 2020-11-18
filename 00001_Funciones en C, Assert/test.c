@@ -1,28 +1,39 @@
 /*...extra...*/
 
-int x,y,expected;
+int x, y, expected;
 
 describe ("Distancia") {
     
-    x, y = 15,2;
+    x = 15;
+    y = 2;
     expected = DISTANCIA(x,y);
     it (genMsj(x,y,expected)) {
         should_int(distancia(x,y)) be equal to(expected);
     } end
 
-    x, y = -15,-2;
+    x = -15;
+    y = -2;
     expected = DISTANCIA(x,y);
     it (genMsj(x,y,expected)) {
         should_int(distancia(x,y)) be equal to(expected);
     } end
 
-    x, y = 0,0;
+    x = 0;
+    y = 0;
     expected = DISTANCIA(x,y);
     it (genMsj(x,y,expected)) {
         should_int(distancia(x,y)) be equal to(expected);
     } end
-
-    x, y = -50,100;
+    
+    x = 2;
+    y = 3;
+    expected = DISTANCIA(x,y);
+    it (genMsj(x,y,expected)) {
+        should_int(distancia(x,y)) be equal to(expected);
+    } end
+    
+    x = 50;
+    y = -100;
     expected = DISTANCIA(x,y);
     it (genMsj(x,y,expected)) {
         should_int(distancia(x,y)) be equal to(expected);
