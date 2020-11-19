@@ -13,7 +13,7 @@ INVERTIR(control_0, len);
 
 describe(genMsjTest("[]", arrayToString(control_0, len))) {
 
-    it (genMasjResult(arrayToString(student_0, len))) {
+    it (genMsjResult(arrayToString(student_0, len))) {
         array_equal = twoArrayEqual(student_0, control_0, len);
         should_bool(array_equal) be equal to(true);
     } end
@@ -30,7 +30,7 @@ INVERTIR(control_1, len);
 
 describe(genMsjTest("[66]", arrayToString(control_1, len))) {
 
-    it (genMasjResult(arrayToString(student_1, len))) {
+    it (genMsjResult(arrayToString(student_1, len))) {
         array_equal = twoArrayEqual(student_1, control_1, len);
         should_bool(array_equal) be equal to(true);
     } end
@@ -47,7 +47,7 @@ INVERTIR(control_2, len);
 
 describe(genMsjTest("[1,2,3,4]", arrayToString(control_2, len))) {
 
-    it (genMasjResult(arrayToString(student_2, len))) {
+    it (genMsjResult(arrayToString(student_2, len))) {
         array_equal = twoArrayEqual(student_2, control_2, len);
         should_bool(array_equal) be equal to(true);
     } end
@@ -64,7 +64,7 @@ INVERTIR(control_3, len);
 
 describe(genMsjTest("[-2,-1,0,1,2]", arrayToString(control_3, len))) {
 
-    it (genMasjResult(arrayToString(student_3, len))) {
+    it (genMsjResult(arrayToString(student_3, len))) {
         array_equal = twoArrayEqual(student_3, control_3, len);
         should_bool(array_equal) be equal to(true);
     } end
