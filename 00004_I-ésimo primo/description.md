@@ -1,4 +1,4 @@
-* Programe en lenguage C, la función `iesimoPrimo` con el siguente tipo:
+* Programe en lenguage C, la función `iesimoPrimo` con el siguente prototipo:
 
 ```javascript
 int iesimoPrimo(int N) {

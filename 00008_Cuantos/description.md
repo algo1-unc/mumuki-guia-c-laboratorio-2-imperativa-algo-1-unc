@@ -15,6 +15,6 @@ struct comp_t {
 };
 ```
 
-La misma, calcula cuántos elementos **menores**, **iguales** y **mayores** a (`elem`), contiene el arreglo de enteros (`a`) de tamaño (`tam >= 0`).
+La misma, calcula cuántos elementos **menores**, **iguales** y **mayores** a (`elem`) contiene el arreglo de enteros (`a`) de longitud (`tam >= 0`).
 
 > **IMPORTANTE:** La función solo debe contener un único ciclo.

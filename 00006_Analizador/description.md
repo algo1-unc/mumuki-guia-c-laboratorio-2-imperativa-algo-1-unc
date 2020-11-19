@@ -18,6 +18,6 @@ struct info_t {
 };
 ```
 
-La función toma un arreglo de enteros (`a`) y su tamaño (`tam`); y devuelve una estructura de tipo `info_t` con la suma total de los elementos, el maximo y mínimo elemento encontrado, y dos 'booleanos' que indican si esta conformada por todos números positivos, o contiene al menos uno.
+La función toma un arreglo de enteros (`a`) y su longitud (`tam > 0`); y devuelve una estructura de tipo `info_t` con la suma total de los elementos, el maximo y mínimo elemento encontrado, y dos valores "booleanos" que indican si esta conformada por todos números positivos, o contiene al menos uno.
 
 > **IMPORTANTE:** La función debe contener un único ciclo.
