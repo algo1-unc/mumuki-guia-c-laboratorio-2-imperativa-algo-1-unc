@@ -10,7 +10,7 @@ char* genMsj(   const char* list,
                 const int sum, const int max, const int min,
                 const bool any_pos,  const bool all_pos) {
     char* message;
-    asprintf(&message,"(%s) | Sum:%d, Max:%d, Min:%d, Alguno(+):%s, Todos(+):%s",
+    asprintf(&message,"%s. Sum:%d, Max:%d, Min:%d, Alguno(+):%s, Todos(+):%s",
         list, sum, max, min, any_pos ? "true": "false", all_pos ? "true": "false");
     return message;
 }

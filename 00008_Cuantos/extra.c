@@ -10,8 +10,8 @@ char* genMsj(   const char* list, const int elem,
                 const int menores, const int iguales, const int mayores) {
 
     char* message;
-    asprintf(&message, "%s. (> %d):%d, (== %d):%d, (< %d):%d", 
-        list, elem, menores, elem, iguales, elem, mayores);
+    asprintf(&message, "%s. (> %d): %d, (== %d): %d, (< %d): %d", 
+        list, elem, mayores, elem, iguales, elem, menores);
     return message;
 }
 
