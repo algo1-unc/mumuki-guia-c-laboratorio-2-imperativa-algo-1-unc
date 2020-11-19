@@ -1,7 +1,7 @@
-* Programe la función `analiza_array` en lenguaje C:
+* Programe la función `analizaArray` en lenguaje C:
 
 ```javascript
-struct info_t analiza_array(int a[], int tam) {
+struct info_t analizaArray(int a[], int tam) {
  ...
 }
 ```

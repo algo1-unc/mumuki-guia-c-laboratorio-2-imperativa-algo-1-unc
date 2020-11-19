@@ -9,7 +9,7 @@ struct INFO_T st_expected;
 int list0[] = {0};
 len = sizeof(list0) / sizeof(int);
 
-st_student = analiza_array(list0, len);
+st_student = analizaArray(list0, len);
 st_expected = ANALIZA_ARRAY(list0, len);
 
 describe( genMsj("[0]",
@@ -45,7 +45,7 @@ describe( genMsj("[0]",
 int list1[] = {-54};
 len = sizeof(list1) / sizeof(int);
 
-st_student = analiza_array(list1, len);
+st_student = analizaArray(list1, len);
 st_expected = ANALIZA_ARRAY(list1, len);
 
 describe( genMsj("[-54]",
@@ -81,7 +81,7 @@ describe( genMsj("[-54]",
 int list2[] = {-1,-2,0,1,2};
 len = sizeof(list2) / sizeof(int);
 
-st_student = analiza_array(list2, len);
+st_student = analizaArray(list2, len);
 st_expected = ANALIZA_ARRAY(list2, len);
 
 describe( genMsj("[-1,-2,0,1,2]",
@@ -117,7 +117,7 @@ describe( genMsj("[-1,-2,0,1,2]",
 int list3[] = {1,2,3,4,5};
 len = sizeof(list3) / sizeof(int);
 
-st_student = analiza_array(list3, len);
+st_student = analizaArray(list3, len);
 st_expected = ANALIZA_ARRAY(list3, len);
 
 describe( genMsj("[1,2,3,4,5]",
