@@ -5,8 +5,8 @@ bool array_equal;
 
 
 //  --- Test 0
-char student_0[] = {1,2,3,4,5};
-char control_0[] = {1,2,3,4,5};
+int student_0[] = {1,2,3,4,5};
+int control_0[] = {1,2,3,4,5};
 len = sizeof(student_0)/sizeof(int);
 i = 0;
 j = len - 1;
@@ -24,8 +24,8 @@ describe(genMsjTest("[1,2,3,4,5]", arrayToString(control_0, len), i, j)) {
 } end
 
 //  --- Test 1
-char student_1[] = {71};
-char control_1[] = {71};
+int student_1[] = {71};
+int control_1[] = {71};
 len = sizeof(student_1)/sizeof(int);
 i = 0;
 j = 0;
@@ -43,8 +43,8 @@ describe(genMsjTest("[1]", arrayToString(control_1, len), i, j)) {
 } end
 
 //  --- Test 2
-char student_2[] = {-3,-2,-1,0,1,2,3};
-char control_2[] = {-3,-2,-1,0,1,2,3};
+int student_2[] = {-3,-2,-1,0,1,2,3};
+int control_2[] = {-3,-2,-1,0,1,2,3};
 len = sizeof(student_2)/sizeof(int);
 i = 1;
 j = 5;
