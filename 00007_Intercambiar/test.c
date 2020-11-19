@@ -33,7 +33,7 @@ j = 0;
 intercambiar(student_1, len, i, j);
 INTERCAMBIAR(control_1, len, i, j);
 
-describe(genMsjTest("[1]", arrayToString(control_1, len), i, j)) {
+describe(genMsjTest("[71]", arrayToString(control_1, len), i, j)) {
 
     it (genMsjResult(arrayToString(student_1, len))) {
         array_equal = twoArrayEqual(student_1, control_1, len);
@@ -56,6 +56,25 @@ describe(genMsjTest("[-3,-2,-1,0,1,2,3]", arrayToString(control_2, len), i, j)) 
 
     it (genMsjResult(arrayToString(student_2, len))) {
         array_equal = twoArrayEqual(student_2, control_2, len);
+        should_bool(array_equal) be equal to(true);
+    } end
+
+} end
+
+//  --- Test 3
+int student_3[] = {10,9,7,8,6};
+int control_3[] = {10,9,7,8,6};
+len = sizeof(student_3)/sizeof(int);
+i = 2;
+j = 3;
+
+intercambiar(student_3, len, i, j);
+INTERCAMBIAR(control_3, len, i, j);
+
+describe(genMsjTest("[10,9,7,8,6]", arrayToString(control_3, len), i, j)) {
+
+    it (genMsjResult(arrayToString(student_3, len))) {
+        array_equal = twoArrayEqual(student_3, control_3, len);
         should_bool(array_equal) be equal to(true);
     } end
 
