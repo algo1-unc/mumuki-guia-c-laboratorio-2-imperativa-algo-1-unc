@@ -5,7 +5,7 @@ void ordenar(int a[], int tam){
 ...
 }
 ```
-Debajo, te mostramos el funcionamiento de tres de los algorítmos más conocidos de ordenación:
+* Debajo, te mostramos el funcionamiento de tres de los algorítmos más conocidos de ordenación:
 
 1. **Insertion sort:**
 
