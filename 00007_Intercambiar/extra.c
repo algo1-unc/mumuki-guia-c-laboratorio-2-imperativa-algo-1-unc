@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <assert.h>
+#include <stdlib.h>
 
 
 // Funciones para generar mensaje de test

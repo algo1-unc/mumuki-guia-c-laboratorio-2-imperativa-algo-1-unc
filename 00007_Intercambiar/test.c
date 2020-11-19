@@ -11,8 +11,8 @@ len = sizeof(student_0)/sizeof(int);
 i = 0;
 j = len - 1;
 
-intercambiar(student_0, len);
-INTERCAMBIAR(control_0, len);
+intercambiar(student_0, len, i, j);
+INTERCAMBIAR(control_0, len, i, j);
 
 describe(genMsjTest("[1,2,3,4,5]", arrayToString(control_0, len), i, j)) {
 
@@ -30,8 +30,8 @@ len = sizeof(student_1)/sizeof(int);
 i = 0;
 j = 0;
 
-intercambiar(student_1, len);
-INTERCAMBIAR(control_1, len);
+intercambiar(student_1, len, i, j);
+INTERCAMBIAR(control_1, len, i, j);
 
 describe(genMsjTest("[1]", arrayToString(control_1, len), i, j)) {
 
@@ -49,8 +49,8 @@ len = sizeof(student_2)/sizeof(int);
 i = 1;
 j = 5;
 
-intercambiar(student_2, len);
-INTERCAMBIAR(control_2, len);
+intercambiar(student_2, len, i, j);
+INTERCAMBIAR(control_2, len, i, j);
 
 describe(genMsjTest("[-3,-2,-1,0,1,2,3]", arrayToString(control_2, len), i, j)) {
 
