@@ -1,4 +1,4 @@
-Hacer una función llamada `intercambiar` con el siguiente tipo:
+* Hacer una función llamada `intercambiar` con el siguiente tipo:
 
 ```javascript
 void intercambiar(int a[], int tam, int i, int j){
