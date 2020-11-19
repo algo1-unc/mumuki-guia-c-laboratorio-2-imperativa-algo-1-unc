@@ -2,9 +2,10 @@
 #include <string.h>
 #include <stdbool.h>
 #include <assert.h>
+#include <stdlib.h>
 
 
-// Funciones para generar mensaje de test
+// Funciones para generar mensajes de test
 char* genMsj(   const char* list,
                 const int sum, const int max, const int min,
                 const bool any_pos,  const bool all_pos) {
@@ -14,6 +15,22 @@ char* genMsj(   const char* list,
     return message;
 }
 
+char* arrayToString(int a[], int tam) {
+    int offset = 0;
+    char *string;
+    string = calloc((tam*2)+1, sizeof(char));
+
+    offset += sprintf (&string[offset], "[");
+    for (int i = 0; i < tam; i++) {
+        if (i != tam - 1) {
+            offset += sprintf (&string[offset], "%d,", a[i]);
+        } else {
+            offset += sprintf (&string[offset], "%d", a[i]);
+        }
+    }
+    offset += sprintf (&string[offset], "]");
+    return string;
+}
 
 // Funcion de control
 struct INFO_T {

@@ -14,7 +14,9 @@ j = len - 1;
 intercambiar(student_0, len, i, j);
 INTERCAMBIAR(control_0, len, i, j);
 
-describe(genMsjTest("[1,2,3,4,5]", arrayToString(control_0, len), i, j)) {
+describe(   genMsjTest("[1,2,3,4,5]",
+            arrayToString(control_0, len),
+            i, j)) {
 
     it (genMsjResult(arrayToString(student_0, len))) {
         array_equal = twoArrayEqual(student_0, control_0, len);
@@ -33,7 +35,9 @@ j = 0;
 intercambiar(student_1, len, i, j);
 INTERCAMBIAR(control_1, len, i, j);
 
-describe(genMsjTest("[71]", arrayToString(control_1, len), i, j)) {
+describe(   genMsjTest("[71]",
+            arrayToString(control_1, len),
+            i, j)) {
 
     it (genMsjResult(arrayToString(student_1, len))) {
         array_equal = twoArrayEqual(student_1, control_1, len);
@@ -52,7 +56,9 @@ j = 5;
 intercambiar(student_2, len, i, j);
 INTERCAMBIAR(control_2, len, i, j);
 
-describe(genMsjTest("[-3,-2,-1,0,1,2,3]", arrayToString(control_2, len), i, j)) {
+describe(   genMsjTest("[-3,-2,-1,0,1,2,3]", 
+            arrayToString(control_2, len), 
+            i, j)) {
 
     it (genMsjResult(arrayToString(student_2, len))) {
         array_equal = twoArrayEqual(student_2, control_2, len);
@@ -60,6 +66,7 @@ describe(genMsjTest("[-3,-2,-1,0,1,2,3]", arrayToString(control_2, len), i, j)) 
     } end
 
 } end
+
 
 //  --- Test 3
 int student_3[] = {10,9,7,8,6};
@@ -71,7 +78,9 @@ j = 3;
 intercambiar(student_3, len, i, j);
 INTERCAMBIAR(control_3, len, i, j);
 
-describe(genMsjTest("[10,9,7,8,6]", arrayToString(control_3, len), i, j)) {
+describe(   genMsjTest("[10,9,7,8,6]", 
+            arrayToString(control_3, len),
+            i, j)) {
 
     it (genMsjResult(arrayToString(student_3, len))) {
         array_equal = twoArrayEqual(student_3, control_3, len);

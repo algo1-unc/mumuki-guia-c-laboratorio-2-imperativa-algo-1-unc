@@ -12,7 +12,7 @@ len = sizeof(list0) / sizeof(int);
 st_student = analizaArray(list0, len);
 st_expected = ANALIZA_ARRAY(list0, len);
 
-describe( genMsj("[0]",
+describe( genMsj(arrayToString(list0, len),
                 st_expected.sumatoria, 
                 st_expected.maximo, 
                 st_expected.minimo, 
@@ -48,7 +48,7 @@ len = sizeof(list1) / sizeof(int);
 st_student = analizaArray(list1, len);
 st_expected = ANALIZA_ARRAY(list1, len);
 
-describe( genMsj("[-54]",
+describe( genMsj(arrayToString(list1, len),
                 st_expected.sumatoria, 
                 st_expected.maximo, 
                 st_expected.minimo,
@@ -84,7 +84,7 @@ len = sizeof(list2) / sizeof(int);
 st_student = analizaArray(list2, len);
 st_expected = ANALIZA_ARRAY(list2, len);
 
-describe( genMsj("[-1,-2,0,1,2]",
+describe( genMsj(arrayToString(list2, len),
                 st_expected.sumatoria, 
                 st_expected.maximo, 
                 st_expected.minimo, 
@@ -120,7 +120,7 @@ len = sizeof(list3) / sizeof(int);
 st_student = analizaArray(list3, len);
 st_expected = ANALIZA_ARRAY(list3, len);
 
-describe( genMsj("[1,2,3,4,5]",
+describe( genMsj(arrayToString(list3, len),
                 st_expected.sumatoria, 
                 st_expected.maximo, 
                 st_expected.minimo, 
